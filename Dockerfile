@@ -10,6 +10,6 @@ RUN pip config set global.cert /usr/local/share/ca-certificates/nerootca2042.crt
 
 RUN pip install -r requirements.txt
 
-#EXPOSE 5000
+EXPOSE 8000
 
-#CMD ["python", "/flask/flaskhello.py"]
+CMD ["ash", "/django/djangohello.sh"]
